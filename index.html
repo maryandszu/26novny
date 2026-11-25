@@ -17,6 +17,7 @@
     --bag:#E0505A;    --bag-deep:#C02531;
     --beauty:#F29BB8; --beauty-deep:#D9658C;
     --life:#8FB4E6;   --life-deep:#4F82C6;
+    --owala:#3FA9A0;   --owala-deep:#1F7F78;
     --wear:#5A74B0;   --wear-deep:#2F4C8E;
     --card:#FFFFFF; --line:#F1D3E2; --tag:#B9D3F2;
   }
@@ -37,18 +38,18 @@
   .sub-eyebrow{ font-family:"Zen Maru Gothic",sans-serif; font-weight:700; font-size:13.5px; color:#FFE3EA; margin:12px 0 0; }
   .nav{ display:flex; flex-wrap:wrap; justify-content:center; gap:8px; max-width:520px; margin:0 auto; padding:18px 16px 0; }
   .chip{ font-family:"Zen Maru Gothic",sans-serif; font-weight:700; font-size:13px; text-decoration:none; color:#fff; padding:6px 13px; border-radius:20px; box-shadow:0 3px 0 rgba(0,0,0,0.08); }
-  .chip.bag{background:var(--bag-deep);} .chip.beauty{background:var(--beauty-deep);} .chip.life{background:var(--life-deep);} .chip.wear{background:var(--wear-deep);}
+  .chip.bag{background:var(--bag-deep);} .chip.beauty{background:var(--beauty-deep);} .chip.life{background:var(--life-deep);} .chip.owala{background:var(--owala-deep);} .chip.wear{background:var(--wear-deep);}
   .wrap{ max-width:520px; margin:0 auto; padding:4px 16px 60px; }
   .section-title{ display:flex; align-items:center; gap:10px; margin:36px 4px 14px; scroll-margin-top:12px; background:rgba(255,248,252,.85); padding:6px 10px; border-radius:8px; }
   .section-title .badge{ font-family:"Zen Maru Gothic",sans-serif; font-weight:700; font-size:12px; color:#fff; padding:5px 12px; border-radius:5px; letter-spacing:0.04em; box-shadow:0 2px 0 rgba(42,58,102,0.15); }
-  .badge.bag{background:var(--bag-deep);} .badge.beauty{background:var(--beauty-deep);} .badge.life{background:var(--life-deep);} .badge.wear{background:var(--wear-deep);}
+  .badge.bag{background:var(--bag-deep);} .badge.beauty{background:var(--beauty-deep);} .badge.life{background:var(--life-deep);} .badge.owala{background:var(--owala-deep);} .badge.wear{background:var(--wear-deep);}
   .section-title h2{ font-family:"Zen Maru Gothic",sans-serif; font-size:15px; font-weight:700; margin:0; color:var(--ink); }
   .section-title .line{ flex:1; height:1px; background:var(--line); }
   ul.list{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px; }
   a.card{ display:flex; gap:14px; background:var(--card); border:1px solid var(--line); border-left-width:6px; border-radius:8px; padding:12px;
     text-decoration:none; color:inherit; box-shadow:0 4px 0 rgba(42,58,102,0.08); transition:transform .12s ease, box-shadow .12s ease; }
   ul.list.bag a.card{border-left-color:var(--bag-deep);} ul.list.beauty a.card{border-left-color:var(--beauty-deep);}
-  ul.list.life a.card{border-left-color:var(--life-deep);} ul.list.wear a.card{border-left-color:var(--wear-deep);}
+  ul.list.life a.card{border-left-color:var(--life-deep);} ul.list.owala a.card{border-left-color:var(--owala-deep);} ul.list.wear a.card{border-left-color:var(--wear-deep);}
   a.card:active{ transform:scale(0.98); box-shadow:0 1px 0 rgba(42,58,102,0.08); }
   .thumb{ width:128px; height:128px; flex:none; border-radius:6px; overflow:hidden; background:var(--paper); display:flex; align-items:center; justify-content:center; position:relative; }
   .thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
@@ -56,7 +57,7 @@
   .thumb.placeholder svg.flower-icon{ width:46px; height:46px; }
   .thumb.placeholder .soon{ position:absolute; left:0; right:0; bottom:6px; text-align:center; font-family:"Zen Maru Gothic",sans-serif; font-size:9.5px; font-weight:700; color:rgba(255,255,255,0.9); letter-spacing:0.03em; }
   ul.list.bag .thumb{--c1:#F5A3A8; --c2:#C02531;} ul.list.beauty .thumb{--c1:#FAD0DE; --c2:#D9658C;}
-  ul.list.life .thumb{--c1:#D3E4F8; --c2:#4F82C6;} ul.list.wear .thumb{--c1:#B9C8E8; --c2:#2F4C8E;}
+  ul.list.life .thumb{--c1:#D3E4F8; --c2:#4F82C6;} ul.list.owala .thumb{--c1:#A8E0DA; --c2:#1F7F78;} ul.list.wear .thumb{--c1:#B9C8E8; --c2:#2F4C8E;}
   .info{ flex:1; min-width:0; display:flex; flex-direction:column; justify-content:center; gap:6px; }
   .code-tag{ align-self:flex-start; font-family:"Zen Maru Gothic",sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.04em; color:var(--ink); background:var(--tag); padding:2px 8px; border-radius:4px; }
   .name{ font-size:14.5px; font-weight:500; line-height:1.4; color:var(--ink); overflow:hidden; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; }
@@ -74,7 +75,7 @@
   <p class="sub-eyebrow">點任一張卡片即可前往 Facebook 社團該商品的下單貼文</p>
 </header>
 <div class="wave"></div>
-<nav class="nav"><a class="chip bag" href="#bag">👜 精品包・皮夾</a><a class="chip beauty" href="#beauty">💄 美妝保養</a><a class="chip life" href="#life">🍫 零食・生活選物</a><a class="chip wear" href="#wear">👗 服飾・配件</a></nav>
+<nav class="nav"><a class="chip bag" href="#bag">👜 精品包・皮夾</a><a class="chip beauty" href="#beauty">💄 美妝保養</a><a class="chip life" href="#life">🍫 零食・生活選物</a><a class="chip owala" href="#owala">💧 OWALA 水壺專區</a><a class="chip wear" href="#wear">👗 服飾・配件</a></nav>
 <div class="wrap">
 
   <div class="section-title" id="bag"><span class="badge bag">BAGS</span><h2>👜 精品包・皮夾</h2><span class="line"></span></div>
@@ -202,6 +203,38 @@
     <li><a class="card" href="https://reurl.cc/YmZl30" target="_blank" rel="noopener">
       <div class="thumb" data-ph="&lt;svg class=&quot;flower-icon&quot; viewBox=&quot;0 0 40 40&quot;&gt;&lt;path d=&quot;M20 33 C8 25 5 17 9 12 C13 8 18 10 20 14 C22 10 27 8 31 12 C35 17 32 25 20 33Z&quot; fill=&quot;#fff&quot; opacity=&quot;.92&quot;/&gt;&lt;/svg&gt;&lt;span class=&quot;soon&quot;&gt;IMAGE SOON&lt;/span&gt;"><img src="images/NY1118.jpg" alt="黑五折扣!美國NODPOD重力舒眠眼罩" onerror="this.parentNode.classList.add('placeholder');this.outerHTML=this.parentNode.dataset.ph"></div>
       <div class="info"><span class="code-tag">NY1118</span><div class="name">黑五折扣!美國NODPOD重力舒眠眼罩</div><div class="cta">前往下單貼文<svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+    </a></li>
+  </ul>
+
+  <div class="section-title" id="owala"><span class="badge owala">OWALA</span><h2>💧 OWALA 水壺專區</h2><span class="line"></span></div>
+  <ul class="list owala">
+    <li><a class="card" href="https://reurl.cc/MWp0l3" target="_blank" rel="noopener">
+      <div class="thumb" data-ph="&lt;svg class=&quot;flower-icon&quot; viewBox=&quot;0 0 40 40&quot;&gt;&lt;path d=&quot;M20 33 C8 25 5 17 9 12 C13 8 18 10 20 14 C22 10 27 8 31 12 C35 17 32 25 20 33Z&quot; fill=&quot;#fff&quot; opacity=&quot;.92&quot;/&gt;&lt;/svg&gt;&lt;span class=&quot;soon&quot;&gt;IMAGE SOON&lt;/span&gt;"><img src="images/US1101.jpg" alt="OWALA直飲式保冰水壺FREESIP KIDS [16oz/ 473ml]" onerror="this.parentNode.classList.add('placeholder');this.outerHTML=this.parentNode.dataset.ph"></div>
+      <div class="info"><span class="code-tag">US1101</span><div class="name">OWALA直飲式保冰水壺FREESIP KIDS [16oz/ 473ml]</div><div class="cta">前往下單貼文<svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+    </a></li>
+    <li><a class="card" href="https://reurl.cc/yWdMO6" target="_blank" rel="noopener">
+      <div class="thumb" data-ph="&lt;svg class=&quot;flower-icon&quot; viewBox=&quot;0 0 40 40&quot;&gt;&lt;path d=&quot;M20 33 C8 25 5 17 9 12 C13 8 18 10 20 14 C22 10 27 8 31 12 C35 17 32 25 20 33Z&quot; fill=&quot;#fff&quot; opacity=&quot;.92&quot;/&gt;&lt;/svg&gt;&lt;span class=&quot;soon&quot;&gt;IMAGE SOON&lt;/span&gt;"><img src="images/US1102.jpg" alt="OWALA 直飲式保冰水壺FREESIP [24oz/ 710ml]" onerror="this.parentNode.classList.add('placeholder');this.outerHTML=this.parentNode.dataset.ph"></div>
+      <div class="info"><span class="code-tag">US1102</span><div class="name">OWALA 直飲式保冰水壺FREESIP [24oz/ 710ml]</div><div class="cta">前往下單貼文<svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+    </a></li>
+    <li><a class="card" href="https://reurl.cc/4YKplV" target="_blank" rel="noopener">
+      <div class="thumb" data-ph="&lt;svg class=&quot;flower-icon&quot; viewBox=&quot;0 0 40 40&quot;&gt;&lt;path d=&quot;M20 33 C8 25 5 17 9 12 C13 8 18 10 20 14 C22 10 27 8 31 12 C35 17 32 25 20 33Z&quot; fill=&quot;#fff&quot; opacity=&quot;.92&quot;/&gt;&lt;/svg&gt;&lt;span class=&quot;soon&quot;&gt;IMAGE SOON&lt;/span&gt;"><img src="images/US1103.jpg" alt="OWALA 直飲式保冰水壺 FREESIP大款 [32oz/ 945ml] / [40oz/1180ml]" onerror="this.parentNode.classList.add('placeholder');this.outerHTML=this.parentNode.dataset.ph"></div>
+      <div class="info"><span class="code-tag">US1103</span><div class="name">OWALA 直飲式保冰水壺 FREESIP大款 [32oz/ 945ml] / [40oz/1180ml]</div><div class="cta">前往下單貼文<svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+    </a></li>
+    <li><a class="card" href="https://reurl.cc/lnmOY6" target="_blank" rel="noopener">
+      <div class="thumb" data-ph="&lt;svg class=&quot;flower-icon&quot; viewBox=&quot;0 0 40 40&quot;&gt;&lt;path d=&quot;M20 33 C8 25 5 17 9 12 C13 8 18 10 20 14 C22 10 27 8 31 12 C35 17 32 25 20 33Z&quot; fill=&quot;#fff&quot; opacity=&quot;.92&quot;/&gt;&lt;/svg&gt;&lt;span class=&quot;soon&quot;&gt;IMAGE SOON&lt;/span&gt;"><img src="images/US1104.jpg" alt="OWALA 兒童隨行防漏水杯" onerror="this.parentNode.classList.add('placeholder');this.outerHTML=this.parentNode.dataset.ph"></div>
+      <div class="info"><span class="code-tag">US1104</span><div class="name">OWALA 兒童隨行防漏水杯</div><div class="cta">前往下單貼文<svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+    </a></li>
+    <li><a class="card" href="https://reurl.cc/QNroV2" target="_blank" rel="noopener">
+      <div class="thumb" data-ph="&lt;svg class=&quot;flower-icon&quot; viewBox=&quot;0 0 40 40&quot;&gt;&lt;path d=&quot;M20 33 C8 25 5 17 9 12 C13 8 18 10 20 14 C22 10 27 8 31 12 C35 17 32 25 20 33Z&quot; fill=&quot;#fff&quot; opacity=&quot;.92&quot;/&gt;&lt;/svg&gt;&lt;span class=&quot;soon&quot;&gt;IMAGE SOON&lt;/span&gt;"><img src="images/US1105.jpg" alt="OWALA FREESIP SWAY 提把直飲式保冰水壺" onerror="this.parentNode.classList.add('placeholder');this.outerHTML=this.parentNode.dataset.ph"></div>
+      <div class="info"><span class="code-tag">US1105</span><div class="name">OWALA FREESIP SWAY 提把直飲式保冰水壺</div><div class="cta">前往下單貼文<svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+    </a></li>
+    <li><a class="card" href="https://reurl.cc/6XoRGy" target="_blank" rel="noopener">
+      <div class="thumb" data-ph="&lt;svg class=&quot;flower-icon&quot; viewBox=&quot;0 0 40 40&quot;&gt;&lt;path d=&quot;M20 33 C8 25 5 17 9 12 C13 8 18 10 20 14 C22 10 27 8 31 12 C35 17 32 25 20 33Z&quot; fill=&quot;#fff&quot; opacity=&quot;.92&quot;/&gt;&lt;/svg&gt;&lt;span class=&quot;soon&quot;&gt;IMAGE SOON&lt;/span&gt;"><img src="images/US1106.jpg" alt="OWALA FreeSip 替換杯蓋" onerror="this.parentNode.classList.add('placeholder');this.outerHTML=this.parentNode.dataset.ph"></div>
+      <div class="info"><span class="code-tag">US1106</span><div class="name">OWALA FreeSip 替換杯蓋</div><div class="cta">前往下單貼文<svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+    </a></li>
+    <li><a class="card" href="https://reurl.cc/XxvELg" target="_blank" rel="noopener">
+      <div class="thumb" data-ph="&lt;svg class=&quot;flower-icon&quot; viewBox=&quot;0 0 40 40&quot;&gt;&lt;path d=&quot;M20 33 C8 25 5 17 9 12 C13 8 18 10 20 14 C22 10 27 8 31 12 C35 17 32 25 20 33Z&quot; fill=&quot;#fff&quot; opacity=&quot;.92&quot;/&gt;&lt;/svg&gt;&lt;span class=&quot;soon&quot;&gt;IMAGE SOON&lt;/span&gt;"><img src="images/US1107.jpg" alt="Owala SmoothSip Slider 隨行咖啡杯" onerror="this.parentNode.classList.add('placeholder');this.outerHTML=this.parentNode.dataset.ph"></div>
+      <div class="info"><span class="code-tag">US1107</span><div class="name">Owala SmoothSip Slider 隨行咖啡杯</div><div class="cta">前往下單貼文<svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
     </a></li>
   </ul>
 
